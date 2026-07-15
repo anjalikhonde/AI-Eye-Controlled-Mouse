@@ -1,29 +1,27 @@
 # 👁️ AI Eye Controlled Mouse
 
-An AI-powered Eye Controlled Mouse built using **Python**, **OpenCV**, and **Google MediaPipe**.
+Control your computer mouse using only your eye movements! 🚀
 
-This project detects facial landmarks in real-time using a webcam and serves as the foundation for controlling a computer mouse with eye movements.
+This project uses **Computer Vision**, **MediaPipe Face Landmarker**, **OpenCV**, and **PyAutoGUI** to move the mouse cursor based on eye position.
 
 ---
 
-## 🚀 Features
+## 📌 Features
 
-- 🎥 Real-time webcam capture
-- 😊 AI Face Landmark Detection
-- 👁️ Detects 478 facial landmarks
-- ⚡ Fast and lightweight using MediaPipe
-- 🖥️ Built with OpenCV
-- 🐍 Beginner-friendly Python project
+- 👀 Real-time eye tracking
+- 🖱️ Control the mouse cursor using eye movement
+- 🎯 Face landmark detection using MediaPipe
+- ⚡ Smooth webcam processing with OpenCV
+- 🤖 Beginner-friendly AI + Computer Vision project
 
 ---
 
 ## 🛠️ Technologies Used
 
-- Python 3.11
+- Python 3.11+
 - OpenCV
 - MediaPipe
 - PyAutoGUI
-- Computer Vision
 
 ---
 
@@ -31,6 +29,10 @@ This project detects facial landmarks in real-time using a webcam and serves as 
 
 ```
 AI-Eye-Controlled-Mouse/
+│
+├── images/
+│   ├── demo.png
+│   └── tracking.png
 │
 ├── main.py
 ├── face_landmarker.task
@@ -41,60 +43,55 @@ AI-Eye-Controlled-Mouse/
 
 ---
 
-## 📸 Output
+## 📸 Project Demo
 
-> **Add your project screenshot here**
+### Eye Tracking
 
-Example:
+![Eye Tracking](images/demo.png)
 
-```
-images/
-    output.png
-```
+---
 
-Then add:
+### Cursor Tracking
 
-```markdown
-![Output](images/output.png)
-```
+![Cursor Tracking](images/tracking.png)
 
 ---
 
 ## ⚙️ Installation
 
-### 1. Clone the repository
+### Clone Repository
 
 ```bash
 git clone https://github.com/anjalikhonde/AI-Eye-Controlled-Mouse.git
 ```
 
-### 2. Open the project
+Move into the project
 
 ```bash
 cd AI-Eye-Controlled-Mouse
 ```
 
-### 3. Create Virtual Environment
+Create Virtual Environment
 
 ```bash
-py -3.11 -m venv .venv
+python -m venv .venv
 ```
 
-### 4. Activate Virtual Environment
+Activate Virtual Environment
 
-**Windows**
+Windows
 
 ```bash
 .venv\Scripts\activate
 ```
 
-### 5. Install Dependencies
+Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 6. Run the Project
+Run the Project
 
 ```bash
 python main.py
@@ -102,54 +99,58 @@ python main.py
 
 ---
 
-## 📖 How It Works
+## 🧠 How It Works
 
-1. Opens the webcam using OpenCV.
-2. Captures frames in real time.
-3. Converts BGR images to RGB.
-4. Sends each frame to the MediaPipe Face Landmarker model.
-5. Detects facial landmarks.
-6. Draws landmarks on the face.
-7. Displays the live camera feed.
+1. Webcam captures your face.
+2. MediaPipe detects facial landmarks.
+3. The position of your eye is tracked.
+4. Eye coordinates are mapped to the screen.
+5. PyAutoGUI moves the mouse cursor accordingly.
 
 ---
 
-## 📌 Future Improvements
+## 📷 Output
 
-- Eye-controlled mouse cursor
-- Blink detection
-- Left click
-- Right click
-- Double click
-- Scroll using eye movement
-- Drag and Drop
-- Improved tracking accuracy
+- Detects your face in real time.
+- Tracks eye movement.
+- Moves the mouse pointer based on your eye position.
 
 ---
 
-## 🎯 Learning Outcomes
+## 📦 Requirements
 
-Through this project, I learned:
+```
+opencv-python
+mediapipe
+pyautogui
+```
 
-- Python Programming
-- OpenCV Basics
-- Computer Vision
-- MediaPipe Face Landmarker
-- Real-time Video Processing
-- AI-based Facial Landmark Detection
-- Git & GitHub
+or simply install using
+
+```bash
+pip install -r requirements.txt
+```
 
 ---
 
-## 👩‍💻 Author
+## 🚀 Future Improvements
+
+- Left-click using eye blink
+- Right-click using wink detection
+- Scroll using head movement
+- Better cursor smoothing
+- Multi-monitor support
+
+---
+
+## 🙋‍♀️ Author
 
 **Anjali Khonde**
 
-GitHub:
-https://github.com/anjalikhonde
+Computer Engineering Student
+
+GitHub: https://github.com/anjalikhonde
 
 ---
 
-## ⭐ Support
-
-If you found this project useful, consider giving it a ⭐ on GitHub.
+⭐ If you found this project helpful, consider giving it a **Star** on GitHub!
