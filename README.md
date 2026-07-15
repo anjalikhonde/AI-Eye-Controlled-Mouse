@@ -1,24 +1,25 @@
-# 👁️ AI Eye Controlled Mouse
+# 👁️ AI Eye-Controlled Mouse using Python, OpenCV & MediaPipe
 
-Control your computer mouse using only your eye movements! 🚀
+An AI-powered **Eye-Controlled Mouse** built using **Python**, **OpenCV**, **MediaPipe**, and **PyAutoGUI**.
 
-This project uses **Computer Vision**, **MediaPipe Face Landmarker**, **OpenCV**, and **PyAutoGUI** to move the mouse cursor based on eye position.
+This project tracks the user's eye movements in real time through a webcam and moves the mouse cursor accordingly. It demonstrates how **Computer Vision** and **Artificial Intelligence** can be used to create hands-free human-computer interaction.
 
 ---
 
-## 📌 Features
+## 🚀 Features
 
-- 👀 Real-time eye tracking
-- 🖱️ Control the mouse cursor using eye movement
-- 🎯 Face landmark detection using MediaPipe
-- ⚡ Smooth webcam processing with OpenCV
-- 🤖 Beginner-friendly AI + Computer Vision project
+- 👁️ Real-time eye tracking
+- 🖱️ Mouse cursor control using eye movement
+- 😊 Face landmark detection using MediaPipe
+- 🎥 Live webcam processing with OpenCV
+- ⚡ Fast and lightweight implementation
+- 🐍 Beginner-friendly Python project
 
 ---
 
 ## 🛠️ Technologies Used
 
-- Python 3.11+
+- Python 3.11
 - OpenCV
 - MediaPipe
 - PyAutoGUI
@@ -27,12 +28,12 @@ This project uses **Computer Vision**, **MediaPipe Face Landmarker**, **OpenCV**
 
 ## 📂 Project Structure
 
-```
+```text
 AI-Eye-Controlled-Mouse/
 │
 ├── images/
-│   ├── demo.png
-│   └── tracking.png
+│   ├── output1.png
+│   └── output2.png
 │
 ├── main.py
 ├── face_landmarker.task
@@ -43,55 +44,55 @@ AI-Eye-Controlled-Mouse/
 
 ---
 
-## 📸 Project Demo
+## 📸 Project Output
 
 ### Eye Tracking
 
-![Eye Tracking](images/demo.png)
+![Eye Tracking](images/output1.png)
 
 ---
 
-### Cursor Tracking
+### Mouse Cursor Control
 
-![Cursor Tracking](images/tracking.png)
+![Mouse Cursor Control](images/output2.png)
 
 ---
 
 ## ⚙️ Installation
 
-### Clone Repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/anjalikhonde/AI-Eye-Controlled-Mouse.git
 ```
 
-Move into the project
+### 2. Navigate to the Project Folder
 
 ```bash
 cd AI-Eye-Controlled-Mouse
 ```
 
-Create Virtual Environment
+### 3. Create a Virtual Environment
 
 ```bash
-python -m venv .venv
+py -3.11 -m venv .venv
 ```
 
-Activate Virtual Environment
+### 4. Activate the Virtual Environment
 
-Windows
+**Windows**
 
 ```bash
 .venv\Scripts\activate
 ```
 
-Install Dependencies
+### 5. Install Required Libraries
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the Project
+### 6. Run the Project
 
 ```bash
 python main.py
@@ -101,49 +102,62 @@ python main.py
 
 ## 🧠 How It Works
 
-1. Webcam captures your face.
-2. MediaPipe detects facial landmarks.
-3. The position of your eye is tracked.
-4. Eye coordinates are mapped to the screen.
-5. PyAutoGUI moves the mouse cursor accordingly.
+1. Opens the webcam using OpenCV.
+2. Captures live video frames.
+3. Detects facial landmarks using MediaPipe Face Landmarker.
+4. Identifies eye landmarks in real time.
+5. Maps eye position to screen coordinates.
+6. Moves the mouse cursor using PyAutoGUI.
+7. Displays the webcam feed with eye tracking.
 
 ---
 
-## 📷 Output
+## 📚 What I Learned
 
-- Detects your face in real time.
-- Tracks eye movement.
-- Moves the mouse pointer based on your eye position.
+This project helped me learn:
 
----
-
-## 📦 Requirements
-
-```
-opencv-python
-mediapipe
-pyautogui
-```
-
-or simply install using
-
-```bash
-pip install -r requirements.txt
-```
+- Python Programming
+- OpenCV Basics
+- Computer Vision
+- MediaPipe Face Landmarker
+- Facial Landmark Detection
+- Eye Tracking
+- Mouse Automation with PyAutoGUI
+- Real-Time Video Processing
+- Git & GitHub
 
 ---
 
 ## 🚀 Future Improvements
 
-- Left-click using eye blink
-- Right-click using wink detection
-- Scroll using head movement
-- Better cursor smoothing
-- Multi-monitor support
+- 👁️ Blink detection for left click
+- 🖱️ Right-click using wink detection
+- 📜 Scroll using eye movement
+- 🎯 Improved cursor smoothing
+- ⚙️ Better eye calibration
+- 🖥️ Multi-monitor support
 
 ---
 
-## 🙋‍♀️ Author
+## 🎯 Applications
+
+- Accessibility tools
+- Hands-free computer control
+- Human-Computer Interaction (HCI)
+- AI & Computer Vision projects
+- Educational and research purposes
+
+---
+
+## 🤝 Contributing
+
+Contributions and suggestions are welcome.
+
+If you'd like to improve this project, feel free to fork the repository and submit a pull request.
+
+---
+
+## 👩‍💻 Author
 
 **Anjali Khonde**
 
@@ -153,4 +167,8 @@ GitHub: https://github.com/anjalikhonde
 
 ---
 
-⭐ If you found this project helpful, consider giving it a **Star** on GitHub!
+## ⭐ Support
+
+If you found this project useful, please consider giving it a **⭐ Star** on GitHub.
+
+Thank you for visiting this repository!
