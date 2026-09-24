@@ -2,9 +2,7 @@
 
 Control your mouse cursor with your eyes using real-time face landmark tracking. Move the cursor with your iris, left-click with a single blink, right-click with a double blink, and scroll by tilting your head.
 
-<!-- Add your demo picture here, then delete this line and the arrows:
-![Demo](images/your-file-name.gif)
--->
+![Demo](demo.png)
 
 ## Features
 
@@ -36,6 +34,7 @@ eye_controlled_mouse/
 │   ├── scroll_controller.py # head tilt -> scroll
 │   └── ui_overlay.py        # status panel / control box drawing
 ├── face_landmarker.task     # MediaPipe model file (included in repo)
+├── demo.png                 # demo screenshot
 └── requirements.txt
 ```
 
@@ -69,4 +68,4 @@ This project was built as an accessibility-focused, hands-free mouse control too
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the [MIT License](LICENSE).
